@@ -1,0 +1,11 @@
+I will provide you with an English prompt template that contains tags and variables. Your task is to translate the text outside of the tags and variables into Dutch, while keeping the tags and variables in English.
+
+Here is the prompt template: <prompt_template> {$PROMPT_TEMPLATE} </prompt_template>
+
+For example, if the prompt template was: <prompt_template> Answer the following question using the <document> provided:
+
+<question> {$QUESTION} </question> <document> {$DOCUMENT} </document> </prompt_template>
+The translated version would be: <translated_prompt_template> Beantwoord de volgende vraag met behulp van het verstrekte <document>:
+
+<question> {$QUESTION} </question> <document> {$DOCUMENT} </document> </translated_prompt_template>
+Please provide your translated prompt template inside <translated_prompt_template> tags.
