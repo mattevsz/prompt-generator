@@ -4,7 +4,9 @@ import anthropic, re
 with open('prompts/metaprompt.txt', 'r') as file:
     metaprompt = file.read().replace('\n', '')
 
-MODEL_NAME = "claude-3-opus-20240229"
+HAIKU = "claude-3-haiku-20240307"
+OPUS = "claude-3-opus-20240229"
+MODEL_NAME = HAIKU
 
 def extract_between_tags(tag: str, string: str, strip: bool = False) -> list[str]:
     ext_list = re.findall(f"<{tag}>(.+?)</{tag}>", string, re.DOTALL)
